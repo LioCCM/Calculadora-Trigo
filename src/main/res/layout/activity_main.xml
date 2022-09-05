@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Funciones"
+        android:textSize="25sp"
+        android:background="@color/material_dynamic_neutral70"
+        android:textColor="@color/black"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/buttonSIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIN"
+            android:layout_weight="3"
+            />
+        <RadioButton
+            android:id="@+id/buttonCOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COS"
+            android:layout_weight="3"
+            />
+        <RadioButton
+            android:id="@+id/buttonTAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAN"
+            android:layout_weight="3"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grados"
+        android:textSize="25sp"
+        android:background="@color/material_dynamic_neutral70"
+        android:textColor="@color/black"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/button45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45"
+            android:layout_weight="3"
+            android:checked="false"
+            android:onClick="onButtonClicked"/>
+        <RadioButton
+            android:id="@+id/button90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"
+            android:layout_weight="3"
+            android:checked="false"
+            android:onClick="onButtonClicked"/>
+        <RadioButton
+            android:id="@+id/button180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180"
+            android:layout_weight="3"
+            android:checked="false"
+            android:onClick="onButtonClicked"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageAngle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="35dp"
+
+        />
+
+</LinearLayout>
